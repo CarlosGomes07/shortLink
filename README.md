@@ -12,4 +12,25 @@ Antes de começar, certifique-se de ter o Docker e o Docker Compose instalado em
 ``` 
 git clone https://github.com/carlosgomes07/ShortLink.git git clone
 ```
-2.
+2.Navegue até o diretório do projeto:
+```
+cd ShortLink
+```
+3.Inicie os containers:
+```
+docker-compose up
+```
+Isso iniciará os containers que contem as imgens dos banco de dados PostgreSQL e Redis.
+
+4.Instale as dependências do projeto: 
+```
+npm install
+```
+5.Inicie o servidor:
+```
+tsx run server 
+```
+```
+tsx run setup
+```
+O serviço estará disponível em `http://localhost:3000`.
